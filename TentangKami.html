@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - Simulasi Konkruensi</title>
+    <link rel="stylesheet" href="TentangKami.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Menggunakan style.css gabungan -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- ANIMATED BACKGROUND (dari beranda) -->
+    <div class="bg-animation"></div>
+    <div class="decor decor-left"></div>
+    <div class="decor decor-right"></div>
+
+    <!-- SIDEBAR (dari beranda) -->
+    <aside id="sidebar" class="sidebar">
+      <h2 class="side-title">MENU</h2>
+
+      <a href="index.html" class="side-link">
+        <!-- Ganti dengan nama file beranda Anda -->
+        <i class="bx bx-home"></i> Beranda
+      </a>
+      <a href="materi.html" class="side-link">
+        <i class="bx bx-book"></i> Sistem Informasi
+      </a>
+      <a href="TentangKami.html" class="side-link active">
+        <i class="bx bx-info-circle"></i> Tentang Kami
+      </a>
+    </aside>
+
+    <!-- TOGGLE BUTTON (dari beranda) -->
+    <button id="toggleBtn" class="toggle-btn">
+      <i class="bx bx-menu"></i>
+    </button>
+
+    <!-- TOGGLE THEME BUTTON (tambah ini) -->
+    <button
+      id="themeToggle"
+      class="theme-btn"
+      aria-label="Aktifkan Mode Gelap"
+      aria-pressed="false"
+    >
+      <!-- Ikon Bulan (ditampilkan di default ketika mode = light) -->
+      <svg
+        class="icon"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
+        <path
+          d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 12 21a9 9 0 0 0 9-8.21z"
+          fill="currentColor"
+        />
+      </svg>
+
+      <!-- Ikon Matahari (ditampilkan saat dark-mode aktif) -->
+      <svg
+        class="icon"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="5"
+          stroke="currentColor"
+          stroke-width="2"
+          fill="none"
+        />
+        <path
+          d="M12 1v2M12 21v2M4.22 4.22L5.64 5.64M18.36 18.36l1.42 1.42
+             M1 12h2M21 12h2M4.22 19.78L5.64 18.36M18.36 5.64l1.42-1.42"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
+
+    <!-- MAIN CONTENT: 3 FULL-SCREEN SECTIONS -->
+    <main class="scroll-container">
+      <!-- SECTION 1: FOTO BERSAMA KELOMPOK -->
+      <section class="section section-1 fade-up">
+        <div class="slideshow-bg">
+          <div class="slides-container">
+            <div
+              class="slide"
+              style="background-image: url('Profil3.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('Profil2.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('Profil.jpg')"
+            ></div>
+          </div>
+          <button class="slide-btn prev-btn" id="prevBtn">&lt;</button>
+          <button class="slide-btn next-btn" id="nextBtn">&gt;</button>
+        </div>
+        <div class="section-content fade-up">
+          <h1 class="section-title">TSR KARAMAH</h1>
+          <p class="section-desc">
+            Usaha Makanan & Sistem Informasi Penjualan
+          </p><p>
+            TSR Karamah adalah usaha di bidang makanan yang memproduksi dan
+            menjual dua jenis produk kuliner. Usaha ini masih melakukan
+            pencatatan keuangan secara manual sehingga membutuhkan sistem
+            informasi untuk meningkatkan efektivitas dan efisiensi pengelolaan usaha.
+            </p>
+            
+        </div>
+        <!-- TAMBAHKAN TOMBOL DI SINI -->
+        <div class="hero-buttons fade-up">
+          <a href="#section-2" class="btn">FAQ</a>
+          <a href="#section-3" class="btn">Profil Kami</a>
+        </div>
+      </section>
+
+      <!-- SECTION 2: FAQ -->
+      <section id="section-2" class="section section-2">
+        <div class="container">
+          <h2 class="section-title">FAQ</h2>
+          <p class="section-desc">
+            ...
+          </p>
+
+          <div class="faq-accordion">
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>...</span>
+                <i class="bx bx-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  ....
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>...</span>
+                <i class="bx bx-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  ....
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span
+                  >...</span
+                >
+                <i class="bx bx-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+               ...
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>...</span>
+                <i class="bx bx-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  ...
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span
+                  >....</span
+                >
+                <i class="bx bx-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  ...
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>...</span>
+                <i class="bx bx-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  ...
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span
+                  >...</span
+                >
+                <i class="bx bx-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 3: PROFIL KITA -->
+      <section id="section-3" class="section section-3">
+        <div class="container">
+          <h2 class="section-title">Profil Perusahaan</h2>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (dari beranda) -->
+    <footer class="footer">
+      <p>
+        &copy; 2025 TSR KARAMAH
+      </p>
+      <div class="footer-links">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+      </div>
+    </footer>
+
+   
+
+
+
+    <script src="TentangKami.js"></script>
+    <!-- Menggunakan JS terpisah -->
+  </body>
+</html>
