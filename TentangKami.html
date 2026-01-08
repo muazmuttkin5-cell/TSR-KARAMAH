@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - Simulasi Konkruensi</title>
+    <link rel="stylesheet" href="TentangKami.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Menggunakan style.css gabungan -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- ANIMATED BACKGROUND (dari beranda) -->
+    <div class="bg-animation"></div>
+    <div class="decor decor-left"></div>
+    <div class="decor decor-right"></div>
+
+    <!-- SIDEBAR (dari beranda) -->
+    <aside id="sidebar" class="sidebar">
+      <h2 class="side-title">MENU</h2>
+
+      <a href="index.html" class="side-link">
+        <!-- Ganti dengan nama file beranda Anda -->
+        <i class="bx bx-home"></i> Beranda
+      </a>
+      <a href="materi.html" class="side-link">
+        <i class="bx bx-book"></i> Sistem Informasi
+      </a>
+      <a href="TentangKami.html" class="side-link active">
+        <i class="bx bx-info-circle"></i> Tentang Perusahaan
+      </a>
+    </aside>
+
+    <!-- TOGGLE BUTTON (dari beranda) -->
+    <button id="toggleBtn" class="toggle-btn">
+      <i class="bx bx-menu"></i>
+    </button>
+
+    
+
+    <!-- MAIN CONTENT: 3 FULL-SCREEN SECTIONS -->
+    <main class="scroll-container">
+      <!-- SECTION 1: FOTO BERSAMA KELOMPOK -->
+      <section class="section section-1 fade-up">
+        <div class="slideshow-bg">
+          <div class="slides-container">
+            <div
+              class="slide"
+              style="background-image: url('Profil3.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('Profil2.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('Profil.jpg')"
+            ></div>
+          </div>
+          <button class="slide-btn prev-btn" id="prevBtn">&lt;</button>
+          <button class="slide-btn next-btn" id="nextBtn">&gt;</button>
+        </div>
+        <div class="section-content fade-up">
+          <h1 class="section-title">TSR KARAMAH</h1>
+          <p class="section-desc">
+            Usaha Makanan & Sistem Informasi Penjualan
+          </p><p>
+            TSR Karamah adalah usaha di bidang makanan yang memproduksi dan
+            menjual dua jenis produk kuliner. Usaha ini masih melakukan
+            pencatatan keuangan secara manual sehingga membutuhkan sistem
+            informasi untuk meningkatkan efektivitas dan efisiensi pengelolaan usaha.
+            </p>
+            
+        </div>
+        <!-- TAMBAHKAN TOMBOL DI SINI -->
+        <div class="hero-buttons fade-up">
+          <a href="#section-3" class="btn">Profil</a>
+        </div>
+      </section>
+
+     
+      <!-- SECTION 3: PROFIL KITA -->
+      <section id="section-3" class="section section-3">
+  <div class="container fade-up">
+
+    <h2 class="section-title">Tentang TSR Karamah</h2>
+
+    <p class="section-desc">
+      TSR Karamah merupakan usaha di bidang makanan yang bergerak dalam
+      produksi dan distribusi produk makanan kering. Proses produksi
+      dilakukan secara mandiri dengan menjaga kualitas bahan baku,
+      kebersihan, dan konsistensi produk.
+    </p>
+
+    <!-- GALERI FOTO -->
+    <h3 class="sub-title">Galeri Produksi & Produk</h3>
+
+    <div class="gallery">
+      <img src="foto1.jpg" alt="Proses pengemasan produk TSR Karamah">
+      <img src="foto2.jpg" alt="Produk siap distribusi">
+      <img src="foto3.jpg" alt="Stok produk dalam bal">
+      <img src="foto4.jpg" alt="Proses pengiriman produk">
+    </div>
+
+    <!-- LOKASI GOOGLE MAP -->
+    <h3 class="sub-title">Lokasi Usaha</h3>
+
+    <div class="map-wrapper">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3329.694734912579!2d108.25377858022588!3d-7.04488752909389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMDInNDEuNCJTIDEwOMKwMTUnMTQuMCJF!5e0!3m2!1sid!2sid!4v1767838160668!5m2!1sid!2sid"
+   width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+    <p class="section-desc">
+      Lokasi usaha TSR Karamah berada di area yang strategis sehingga
+      memudahkan proses distribusi dan pengiriman produk ke berbagai wilayah.
+    </p>
+
+  </div>
+</section>
+
+    <!-- FOOTER (dari beranda) -->
+    <footer class="footer">
+      <p>
+        &copy; 2025 TSR KARAMAH
+      </p>
+      <div class="footer-links">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+      </div>
+    </footer>
+
+   
+
+
+
+    <script src="TentangKami.js"></script>
+    <!-- Menggunakan JS terpisah -->
+  </body>
+</html>
